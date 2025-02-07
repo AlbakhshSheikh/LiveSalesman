@@ -413,13 +413,13 @@ body {
 }
 
 
+/* Default for large screens */
 .use-cases-section-new {
     margin: 50px auto;
     max-width: 100%;
     padding: 20px;
     background: white;
     border-radius: 10px;
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .use-cases-section-new h2 {
@@ -430,12 +430,126 @@ body {
 
 .container-new {
     display: flex;
+    background: #fff;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.left-new {
+    width: 650px;
+    padding: 15px;
+}
+
+.left-new h2 {
+    background: #1abac6;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 0px rgb(212, 210, 210);
+}
+
+.left-new h2.active-new {
+    background: #6c757d;
+}
+
+.left-new p {
+    font-size: 14px;
+    color: #555;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.right-new {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.image-container-new {
+    display: none;
+}
+
+.image-container-new img {
+    width: 800px;
+    height: 550px;
+    border-radius: 10px;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .container-new {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-new {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .right-new {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-container-new img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 576px) {
+    .use-cases-section-new {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .use-cases-section-new h2 {
+        font-size: 30px;
+    }
+
+    .left-new h2 {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .left-new p {
+        font-size: 12px;
+    }
+
+    .right-new {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .image-container-new img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+/* .container-new {
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-top: 10px;
-}
-
+} */
+/* 
 .card-new {
     justify-content: center;
     padding: 30px 0px;
@@ -504,7 +618,7 @@ body {
     justify-content: center;
     margin-top: 20px;
     gap: 15px;
-}
+} */
 
 .another-section {
     display: flex;

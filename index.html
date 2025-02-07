@@ -83,14 +83,53 @@
         </ul>
     </section>
 
-    <section class="use-cases-section-new">
+    <!-- paste the new code here -->
+    <div class="container-new">
+        <div class="left-new">
+            <h2 class="active-new" onclick="toggleContentNew('desc1-new', 'img1-new', this)">Send invoice on Whatsapp
+            </h2>
+            <p id="desc1-new" style="display: block;">We can directly connect your DMS to our WhatsApp platform to send
+                invoices and other PDF documents, such as job cards, to customers’s whatsapp in real time. This method
+                is eco-friendly and helps save paper.</p>
+
+            <h2 onclick="toggleContentNew('desc2-new', 'img2-new', this)">Effortlessly Book test drive</h2>
+            <p id="desc2-new">With Whatsapp integration for auto companies, we can schedule appointments for test drives
+                at customers’ preferred time slots through personalized conversations, eliminating the wait for a
+                response from a sales representative. In addition to selecting a date and time, customers can specify
+                other details such as the car model and the duration of the test drive etc</p>
+
+            <h2 onclick="toggleContentNew('desc3-new', 'img3-new', this)">Offer Personalized Vehicle Consultation</h2>
+            <p id="desc3-new">
+                While purchasing a car, customers seek extensive information and personalized recommendations. Offering
+                personalized advisory based on customer preferences requires time and effort from sales staff. It can be
+                challenging for human agents to swiftly grasp each prospect's requirements and offer valuable advice.
+                WhatsApp API integration for car sales can easily resolve this issue. AI-powered WhatsApp bots for
+                automotive sector can adeptly discuss car configurations, brochures, share pricing tables, and provide
+                other essential details to help prospects make informed decisions. It can also use customer data to
+                provide personalized car recommendations and tailored offers, enhancing the shopping experience.
+                The AI WhatsApp Chatbot designed for car dealerships and automobile companies can also verify lead
+                information (such as name and contact details) while conversing about models, mileage, and financing
+                options. This personalized consultation aids the customers in scheduling test drives more promptly.
+            </p>
+            
+
+        </div>
+        <div class="right-new">
+            <div id="img1-new" class="image-container-new" style="display: block;"><img src="img/Frame 5 2.png"
+                    alt="Omnichannel"></div>
+            <div id="img2-new" class="image-container-new"><img src="img/Frame 4 2.png" alt="Multilingual Support">
+            </div>
+            <div id="img3-new" class="image-container-new"><img src="img/Frame 3 2.png"
+                    alt="Offer Personalized Vehicle Consultation"></div>
+        </div>
+    </div>
+    <!-- <section class="use-cases-section-new">
         <h2>Here are some specific use cases of WhatsApp chatbot for automotive dealerships:</h2>
         <div class="container-new">
-            <div class="card-new" onclick="toggleDropdown(this)">
+            <div class="card-new visible-new" onclick="toggleDropdown(this)">
                 Send invoice on Whatsapp
                 <div class="dropdown-content">
                     <div class="dropdown-info">
-                        <!-- Information content here -->
                         <p>We can directly connect your DMS to our WhatsApp platform to send invoices and other PDF
                             documents, such as job cards, to customers’s whatsapp in real time. This method is
                             eco-friendly and helps save paper.</p>
@@ -104,7 +143,6 @@
                 Effortlessly Book test drive
                 <div class="dropdown-content">
                     <div class="dropdown-info">
-                        <!-- Information content here -->
                         <p>With Whatsapp integration for auto companies, we can schedule appointments for test drives at
                             customers’ preferred time slots through personalized conversations, eliminating the wait for
                             a response from a sales representative.</p>
@@ -117,7 +155,6 @@
             <div class="card-new visible-new" onclick="toggleDropdown(this)">
                 Offer Personalized Vehicle Consultation <div class="dropdown-content">
                     <div class="dropdown-info">
-                        <!-- Information content here -->
                         <p>While purchasing a car, customers seek extensive information and personalized
                             recommendations. Offering personalized advisory based on customer preferences requires time
                             and effort from sales staff. It can be challenging for human agents to swiftly grasp each
@@ -128,136 +165,13 @@
                     </div>
                 </div>
             </div>
-            <div class="card-new visible-new" onclick="toggleDropdown(this)">
-                Manage Current Leads and Retarget Past Ones <div class="dropdown-content">
-                    <div class="dropdown-info">
-                        <!-- Information content here -->
-                        <p>Manually capturing and following up on leads can be time-consuming and may result in lost
-                            opportunities if not managed efficiently. Similarly, keeping track of follow-ups with
-                            potential customers and maintaining engagement with existing customers can be challenging
-                        </p>
-                    </div>
-                    <div class="dropdown-image">
-                        <img src="img/Frame 9 2.png" alt="Invoice Image">
-                    </div>
-                </div>
-            </div>
-            <div class="card-new" onclick="toggleDropdown(this)">
-                Push Promotions and Offer <div class="dropdown-content">
-                    <div class="dropdown-info">
-                        <!-- Information content here -->
-                        <p>Reaching out to customers with promotions and ensuring they are noticed can be difficult with
-                            traditional marketing channels.
-                        </p>
-                    </div>
-                    <div class="dropdown-image">
-                        <img src="img/Frame 9 2.png" alt="Invoice Image">
-                    </div>
-                </div>
-            </div>
-            <div class="card-new" onclick="toggleDropdown(this)">
-                Help Locate the closest Dealership<div class="dropdown-content">
-                    <div class="dropdown-info">
-                        <!-- Information content here -->
-                        <p>When potential buyers or car owners need information about the nearest dealership or service
-                            center, your WhatsApp chatbot can be extremely useful.</p>
-                    </div>
-                    <div class="dropdown-image">
-                        <img src="img/Frame 9 2.png" alt="Invoice Image">
-                    </div>
-                </div>
-            </div>
-            <div class="card-new" onclick="toggleDropdown(this)">
-                Share Damage Repairs<div class="dropdown-content">
-                    <div class="dropdown-info">
-                        <!-- Information content here -->
-                        <p>Car owners find themselves stuck with emergency repair requirements apart from regular repair
-                            work. Urgent repair service booking can be managed more efficiently in the presence of a
-                            WhatsApp chatbot for car dealerships.</p>
-                    </div>
-                    <div class="dropdown-image">
-                        <img src="img/Frame 9 2.png" alt="Invoice Image">
-                    </div>
-                </div>
-            </div>
-            <div class="card-new" onclick="toggleDropdown(this)">
-                Send Surveys & Collect Customers Feedback<div class="dropdown-content">
-                    <div class="dropdown-info">
-                        <!-- Information content here -->
-                        <p>Collecting and addressing customer feedback promptly can be difficult.
-                        </p>
-                    </div>
-                    <div class="dropdown-image">
-                        <img src="img/Frame 9 2.png" alt="Invoice Image">
-                    </div>
-                </div>
-            </div>
-            <div class="card-new" onclick="toggleDropdown(this)">
-                Sell EW & Service Packages<div class="dropdown-content">
-                    <div class="dropdown-info">
-                        <!-- Information content here -->
-                        <p>Open additional revenue streams by selling extended warranty and service packages through AI
-                            ChatBot for whatsApp.</p>
-                    </div>
-                    <div class="dropdown-image">
-                        <img src="img/Frame 9 2.png" alt="Invoice Image">
-                    </div>
-                </div>
-            </div>
-            <div class="card-new" onclick="toggleDropdown(this)">
-                Suggest and Sell Pre-owned Models<div class="dropdown-content">
-                    <div class="dropdown-info">
-                        <!-- Information content here -->
-                        <p>A WhatsApp chatbot can be an invaluable tool for automotive dealerships, offering significant
-                            benefits to both the business and customers looking for used cars.</p>
-                    </div>
-                    <div class="dropdown-image">
-                        <img src="img/Frame 9 2.png" alt="Invoice Image">
-                    </div>
-                </div>
-            </div>
-            <div class="card-new" onclick="toggleDropdown(this)">
-                Manage insurance and Loan Inquiries<div class="dropdown-content">
-                    <div class="dropdown-info">
-                        <!-- Information content here -->
-                        <p>With AI-powered WhatsApp ChatBots, you can allow your customers seeking car insurance and
-                            loan options to inquire about insurance policies, loan terms, interest rates and required
-                            documents and get instant answers.</p>
-                    </div>
-                    <div class="dropdown-image">
-                        <img src="img/Frame 9 2.png" alt="Invoice Image">
-                    </div>
-                </div>
-            </div>
-            <div class="card-new" onclick="toggleDropdown(this)">
-                Manage Spare parts and accessory available<div class="dropdown-content">
-                    <div class="dropdown-info">
-                        <!-- Information content here -->
-                        <p>Through WhatsApp ChatBots, you can enable your customers to promptly get information about
-                            required spare parts and accessories. </p>
-                    </div>
-                    <div class="dropdown-image">
-                        <img src="img/Frame 9 2.png" alt="Invoice Image">
-                    </div>
-                </div>
-            </div>
-            <div class="card-new" onclick="toggleDropdown(this)">
-                Offer roadside assistance<div class="dropdown-content">
-                    <div class="dropdown-info">
-                        <!-- Information content here -->
-                        <p>Offer fast online vehicle check-ups with instant video chat calls.</p>
-                    </div>
-                    <div class="dropdown-image">
-                        <img src="img/Frame 9 2.png" alt="Invoice Image">
-                    </div>
-                </div>
-            </div>
+
         </div>
         <div class="arrows-new">
             <div class="arrow-new" onclick="changeCardNew(-1)">&#8592;</div>
             <div class="arrow-new" onclick="changeCardNew(1)">&#8594;</div>
         </div>
-    </section>
+    </section> -->
 
     <section class="content-section another-section">
         <div class="another-content">
@@ -320,6 +234,16 @@
         </div>
     </section>
     <script>
+        function toggleContentNew(descId, imgId, element) {
+            document.querySelectorAll('.left-new p').forEach(p => p.style.display = 'none');
+            document.querySelectorAll('.image-container-new').forEach(img => img.style.display = 'none');
+            document.querySelectorAll('.left-new h2').forEach(h2 => h2.classList.remove('active-new'));
+
+            document.getElementById(descId).style.display = "block";
+            document.getElementById(imgId).style.display = "block";
+            element.classList.add('active-new');
+        }
+
         let currentIndexNew = 2;
         const cardsNew = document.querySelectorAll('.card-new');
 
